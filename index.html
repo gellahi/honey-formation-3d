@@ -1,0 +1,123 @@
+<! DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍯 Honey Formation Journey - 3D Interactive Experience</title>
+    <link rel="stylesheet" href="styles. css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="honeycomb-loader"></div>
+            <p>Loading the honey journey...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="main-nav">
+        <div class="nav-content">
+            <h1>🍯 Honey Formation Journey</h1>
+            <div class="nav-controls">
+                <button id="play-pause-btn" class="control-btn">⏸ Pause</button>
+                <button id="reset-btn" class="control-btn">↻ Reset</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Progress Bar -->
+    <div id="progress-bar">
+        <div id="progress-fill"></div>
+    </div>
+
+    <!-- 3D Canvas -->
+    <canvas id="three-canvas"></canvas>
+
+    <!-- Stage Information Panels -->
+    <div id="stage-info" class="info-panel">
+        <h2 id="stage-title">Welcome to the Honey Journey</h2>
+        <p id="stage-description">Scroll down to begin your journey through the fascinating process of honey formation. </p>
+        <button class="next-stage-btn">Next Stage →</button>
+    </div>
+
+    <!-- Stage 1: Bee Foraging -->
+    <section class="stage-section" data-stage="1">
+        <div class="stage-content">
+            <h2>🐝 Stage 1: Bee Foraging</h2>
+            <p>Honeybees fly up to 5 miles from their hive to collect nectar from flowers. Using their long proboscis (tongue), they extract sweet nectar from blooms.</p>
+            <ul class="facts-list">
+                <li>A bee visits 50-100 flowers per trip</li>
+                <li>Nectar is stored in their "honey stomach"</li>
+                <li>Bees can carry up to 40mg of nectar</li>
+            </ul>
+            <button class="next-stage-btn">Next Stage →</button>
+        </div>
+    </section>
+
+    <!-- Stage 2: Honeycomb Construction -->
+    <section class="stage-section" data-stage="2">
+        <div class="stage-content">
+            <h2>🔶 Stage 2: Honeycomb Building</h2>
+            <p>Young worker bees produce beeswax from special glands. They construct hexagonal cells - nature's most efficient storage structure.</p>
+            <ul class="facts-list">
+                <li>Hexagons use the least wax for maximum storage</li>
+                <li>Each cell is precisely angled at 13°</li>
+                <li>Bees produce 8 oz of honey from 1 lb of wax</li>
+            </ul>
+            <button class="next-stage-btn">Next Stage →</button>
+        </div>
+    </section>
+
+    <!-- Stage 3: Nectar Processing -->
+    <section class="stage-section" data-stage="3">
+        <div class="stage-content">
+            <h2>⚗️ Stage 3: Nectar to Honey</h2>
+            <p>Bees deposit nectar into cells and add enzymes. They fan their wings to evaporate water, transforming nectar (80% water) into honey (17% water).</p>
+            <ul class="facts-list">
+                <li>Enzymes break down complex sugars</li>
+                <li>Fanning can reach 200 wing beats per second</li>
+                <li>Process takes 3-7 days per cell</li>
+            </ul>
+            <button class="next-stage-btn">Next Stage →</button>
+        </div>
+    </section>
+
+    <!-- Stage 4: Harvesting -->
+    <section class="stage-section" data-stage="4">
+        <div class="stage-content">
+            <h2>🥄 Stage 4: Harvesting</h2>
+            <p>Beekeepers carefully remove frames from hives, uncap the wax-sealed cells, and extract honey using centrifugal force in a honey spinner.</p>
+            <ul class="facts-list">
+                <li>Only excess honey is harvested</li>
+                <li>Bees are left with enough for winter</li>
+                <li>One hive produces 30-60 lbs per year</li>
+            </ul>
+            <button class="next-stage-btn">Next Stage →</button>
+        </div>
+    </section>
+
+    <!-- Stage 5: Bottling -->
+    <section class="stage-section" data-stage="5">
+        <div class="stage-content">
+            <h2>🍯 Stage 5: Processing & Bottling</h2>
+            <p>Raw honey is filtered to remove wax particles and debris, then bottled.  Pure honey never spoils - it's been found preserved in ancient Egyptian tombs! </p>
+            <ul class="facts-list">
+                <li>Honey is the only food that never expires</li>
+                <li>Contains over 200 beneficial compounds</li>
+                <li>Takes 12 bees their entire lifetime to make 1 teaspoon</li>
+            </ul>
+            <button class="next-stage-btn">Start Over →</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Created with 🐝 and Three.js | An Educational Interactive Experience</p>
+    </footer>
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare. com/ajax/libs/three. js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
